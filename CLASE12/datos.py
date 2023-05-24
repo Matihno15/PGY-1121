@@ -2,7 +2,13 @@
 print("Ingreso de datos")
 print("--------------------")
 nom=input("Ingrese su nombre: ")
-edad=int(input("Ingrese su edad: "))
+while True:
+    try:
+        edad=int(input("Ingrese su edad: "))
+        break
+    except:
+        
+    print("Error de ingreso")
 print("---------------------------")
 print(f"Su numbre es {nom}")
 print(f"Su edad es {edad}")
